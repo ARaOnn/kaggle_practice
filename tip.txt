@@ -1,0 +1,10 @@
+1. null data check
+2. outlier check
+3. feature engineering - ratio feature a/b
+4. product feature a*b 
+5. addition feature / substraction feature
+6. binary category(주로 tree) - 특정기준 만족하느냐 아니냐 ex) (df['a']=='closed').astype('int)
+7. aggregation features - category와 numerical feature의 조합으로 생성되며, category 그룹 당 mean, median, variance, standard deviation을 feature로 사용
+ex) df.groupby('a')['b'].agg('sum').reset_index()
+8. 점수 재면서 feature selection
+9. test set과 비슷한 val set 구축이 중요함
